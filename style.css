@@ -1,0 +1,36 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+    color: #F6F6F6;
+    height: 100vh;
+}
+
+.title-light-blue{
+    color: #22D4FD;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+}
+
+.left-container{
+    width: 615px;
+}
+
+.container-title{
+    font-size: 36px;
+}
+
+.description-container{
+    font-size: 24px;
+}
