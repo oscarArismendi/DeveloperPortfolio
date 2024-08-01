@@ -10,7 +10,6 @@
 body {
     background-color: black;
     color: #F6F6F6;
-    height: 100vh;
 }
 
 .title-light-blue{
@@ -60,10 +59,32 @@ body {
     text-decoration: none;
     color: #F6F6F6;
     border: 2px solid #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.blue-link:hover{
+    background-color: #272727;
 }
 
 .links-container-subtitle{
     font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#profile-picture:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+}
+
+.footer{
+    background-color: #22D4FD;
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
