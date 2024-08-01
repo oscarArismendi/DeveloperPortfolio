@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color:#000000;
+    --secondary-color:#F6F6F6;
+    --tertiary-color: #22D4FD;
+    --hover-color: #272727;
+    /* font families */
+    --montserrat-font: "Montserrat", sans-serif;
+    --krona-font: "Krona One", sans-serif;
+}
+
 *, 
 *:after,
 *:before {
@@ -8,18 +19,30 @@
     text-decoration: none;
 }
 body {
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.title-light-blue{
-    color: #22D4FD;
+.header{
+    padding: 2%  0% 0% 15%;
 }
 
+.header-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link{
+    font-family: var(--montserrat-font);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
 .container{
     display: flex;
     align-items: center;
-    margin: 10% 15%;
+    padding: 6% 15%;
     justify-content: space-between;
 }
 
@@ -32,12 +55,16 @@ body {
 
 .container-title{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--krona-font);
+}
+
+.title-light-blue{
+    color: var(--tertiary-color);
 }
 
 .description-container{
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--montserrat-font);
 }
 
 .links-container{
@@ -53,23 +80,23 @@ body {
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--montserrat-font);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
 .blue-link:hover{
-    background-color: #272727;
+    background-color: var(--hover-color);
 }
 
 .links-container-subtitle{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--krona-font);
     font-size: 24px;
     font-weight: 400;
 }
@@ -80,11 +107,11 @@ body {
 }
 
 .footer{
-    background-color: #22D4FD;
+    background-color: var(--tertiary-color);
     padding: 24px;
-    color: #000000;
+    color: var(--primary-color);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--montserrat-font);
     font-size: 24px;
     font-weight: 400;
 }
