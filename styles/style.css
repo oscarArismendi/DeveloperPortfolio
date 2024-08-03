@@ -34,7 +34,7 @@ body {
 
 .header-menu-link{
     font-family: var(--montserrat-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -44,17 +44,18 @@ body {
     align-items: center;
     padding: 6% 15%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .left-container{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .container-title{
-    font-size: 36px;
+    font-size: 2.5rem;
     font-family: var(--krona-font);
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .description-container{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--montserrat-font);
 }
 
@@ -76,12 +77,12 @@ body {
 }
 
 .blue-link{
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
     font-family: var(--montserrat-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--secondary-color);
@@ -97,8 +98,12 @@ body {
 
 .links-container-subtitle{
     font-family: var(--krona-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+#profile-picture{
+    width: 50%;
 }
 
 #profile-picture:hover{
@@ -112,6 +117,22 @@ body {
     color: var(--primary-color);
     text-align: center;
     font-family: var(--montserrat-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    
+    .header{
+        padding: 10%;
+    }
+
+    .header-menu{
+        justify-content: center;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
+
 }
