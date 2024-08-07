@@ -90,6 +90,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
+    align-items: flex-end;
 }
 
 .blue-link:hover{
@@ -124,7 +125,7 @@ body {
 @media (max-width: 1200px){
     
     .header{
-        padding: 10%;
+        padding: 5%;
     }
 
     .header-menu{
@@ -133,6 +134,17 @@ body {
 
     .container{
         flex-direction: column-reverse;
+        padding: 5%;
     }
 
+    .left-container{
+        width: auto;
+    }
+
+}
+
+@media (max-width: 380px){
+    .blue-link-text{
+        display: none;
+    }
 }
