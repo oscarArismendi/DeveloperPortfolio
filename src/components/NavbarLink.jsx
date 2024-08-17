@@ -1,6 +1,8 @@
+import React from "react";
+import { Link } from "react-router-dom";
 
 export const NavbarLink = ({link,text}) =>{
     return (
-        <a className="header-menu-link" href={link}>{text}</a>
+        <Link to={link} className={"header-menu-link"}>{text}</Link>
     );
 }
