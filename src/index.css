@@ -24,12 +24,13 @@ body {
 }
 
 .header{
-    padding: 2%  0% 0% 15%;
+    padding: 2%  0% 0% 3%;
 }
 
 .header-menu{
     display: flex;
     gap: 80px;
+    justify-content: space-evenly;
 }
 
 .header-menu-link{
@@ -107,6 +108,7 @@ body {
 
 #profile-picture{
     width: 50%;
+    border-radius: 20px;
 }
 
 #profile-picture:hover{

@@ -2,6 +2,7 @@ import { TitleHighlighted} from "./TitleWithHighlightedSection"
 import { ContactLink } from './ContactLink' 
 import { Header } from './Header'
 import { Footer } from './Footer'
+import profilePicture from '../assets/formarCamisaAzulSonriente.jpeg'; 
 export const Home = () =>{
 
   return (<>
@@ -31,7 +32,7 @@ export const Home = () =>{
                 </ContactLink>
         </div>
         </section>
-        <img id="profile-picture" src="src/assets/Imagen.png" alt="Imagen de Ana García trabajando."></img>
+        <img id="profile-picture" src={profilePicture} alt="Imagen de Oscar Arismendi"></img>
       </main>
       <Footer></Footer>
     </> 

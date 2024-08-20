@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #F6F6F6;
+  --tertiary-color: #22D4FD;
+  --hover-color: #272727;
+  /* font families */
+  --montserrat-font: "Montserrat", sans-serif;
+  --krona-font: "Krona One", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+.card {
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  min-width: 80vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 16px 0 8px;
+  color: var(--tertiary-color);
+  font-family: var(--montserrat-font);
+}
+
+.description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.technologies {
+  display: flex;
+  gap: 8px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.technology-logo {
+  background: var(--tertiary-color);
+  height: 50px;
+  border-radius: 20%;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.link-button{
+  min-width: 100px;
+  border-radius: 24px;
+  font-family: var(--montserrat-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  border: 3px solid var(--tertiary-color);
+  padding: 12px;
+}
+
+.link-button:hover{
+  background-color: var(--tertiary-color);
+  font-weight: 700;
+}

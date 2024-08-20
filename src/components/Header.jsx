@@ -14,6 +14,11 @@ export const Header = () => {
                     text={"About me"}
                 >
                 </NavbarLink>
+                <NavbarLink
+                    link={"/projects"}
+                    text={"Projects"}
+                >
+                </NavbarLink>
             </nav>
         </header>
     );
