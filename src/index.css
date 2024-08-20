@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --primary-color:#000000;
-    --secondary-color:#F6F6F6;
+:root {
+    --primary-color: #000000;
+    --secondary-color: #F6F6F6;
     --tertiary-color: #22D4FD;
     --hover-color: #272727;
     /* font families */
@@ -10,7 +10,7 @@
     --krona-font: "Krona One", sans-serif;
 }
 
-*, 
+*,
 *:after,
 *:before {
     margin: 0;
@@ -18,29 +18,31 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
-.header{
-    padding: 2%  0% 0% 3%;
+.header {
+    padding: 2% 0% 0% 3%;
 }
 
-.header-menu{
+.header-menu {
     display: flex;
     gap: 80px;
     justify-content: space-evenly;
 }
 
-.header-menu-link{
+.header-menu-link {
     font-family: var(--montserrat-font);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--tertiary-color);
     text-decoration: none;
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
     padding: 6% 4%;
@@ -48,30 +50,30 @@ body {
     gap: 82px;
 }
 
-.left-container{
+.left-container {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.container-title{
+.container-title {
     font-size: 2.5rem;
     font-family: var(--krona-font);
     text-align: justify;
 }
 
-.title-light-blue{
+.title-light-blue {
     color: var(--tertiary-color);
 }
 
-.description-container{
+.description-container {
     font-size: 1.5rem;
     font-family: var(--montserrat-font);
     text-align: justify;
 }
 
-.links-container{
+.links-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,7 +81,7 @@ body {
     gap: 32px;
 }
 
-.blue-link{
+.blue-link {
     width: 50%;
     text-align: center;
     padding: 21.5px 0;
@@ -96,27 +98,96 @@ body {
     align-items: flex-end;
 }
 
-.blue-link:hover{
+.blue-link:hover {
     background-color: var(--hover-color);
 }
 
-.links-container-subtitle{
+.links-container-subtitle {
     font-family: var(--krona-font);
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-#profile-picture{
+#profile-picture {
     width: 50%;
     border-radius: 20px;
 }
 
-#profile-picture:hover{
+#profile-picture:hover {
     transition: transform 0.5s ease;
     transform: scale(1.05);
 }
 
-.footer{
+.heading {
+    font-family: var(--krona-font);
+    text-align: center;
+}
+
+.heading span {
+    color: var(--tertiary-color);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: var(--krona-font);
+}
+
+.skills-container .skills-box {
+    flex: 1 1 1rem;
+    background: var(--primary-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--tertiary-color);
+    transition: .5s ease;
+}
+
+.skills-container .skills-box:hover {
+    border-color: #4fdeff;
+    transform: scale(1.02);
+}
+
+.skills-box i {
+    font-size: 7rem;
+    color: var(--tertiary-color);
+}
+
+.skills-box h3 {
+    font-size: 2rem;
+}
+
+.skills-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+
+.mysql-icon {
+    width: 114px;
+    filter: invert(30%) sepia(91%) saturate(2049%) hue-rotate(184deg) brightness(98%) contrast(104%);
+}
+
+.postgres-icon {
+    width: 114px;
+    filter: invert(30%) sepia(91%) saturate(2049%) hue-rotate(184deg) brightness(98%) contrast(104%);
+}
+
+.spring-icon {
+    width: 114px;
+    filter: invert(30%) sepia(91%) saturate(2049%) hue-rotate(184deg) brightness(98%) contrast(104%);
+}
+
+.footer {
     background-color: var(--tertiary-color);
     padding: 24px;
     color: var(--primary-color);
@@ -126,29 +197,33 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1200px){
-    
-    .header{
+@media (max-width: 1200px) {
+
+    .header {
         padding: 5%;
     }
 
-    .header-menu{
+    .header-menu {
         justify-content: center;
     }
 
-    .container{
+    .container {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .left-container{
+    .left-container {
         width: auto;
+    }
+
+    .container-title {
+        text-align: center;
     }
 
 }
 
-@media (max-width: 440px){
-    .blue-link-text{
+@media (max-width: 440px) {
+    .blue-link-text {
         display: none;
     }
 }
