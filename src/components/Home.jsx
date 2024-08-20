@@ -3,6 +3,8 @@ import { ContactLink } from './ContactLink'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import profilePicture from '../assets/formarCamisaAzulSonriente.jpeg'; 
+import githubImage from "../assets/github.png";
+import linkedinImage from "../assets/linkedin.png";
 export const Home = () =>{
 
   return (<>
@@ -20,13 +22,13 @@ export const Home = () =>{
                 <h2 className="links-container-subtitle">Access my social profiles:</h2>
                 <ContactLink
                   link={"https://www.linkedin.com/in/oscar-arismendi/"}
-                  imagePath={"src/assets/linkedin.png"}
+                  imagePath={linkedinImage}
                   text={"LinkedIn"}
                   >
                 </ContactLink>
                 <ContactLink
                   link={"https://github.com/oscarArismendi"}
-                  imagePath={"src/assets/github.png"}
+                  imagePath={githubImage}
                   text={"Github"}
                   >
                 </ContactLink>
