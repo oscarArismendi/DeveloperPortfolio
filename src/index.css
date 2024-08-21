@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 :root {
     --primary-color: #000000;
@@ -22,6 +23,26 @@
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+#root {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Hamburger button styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger i{
+    color: white;
+    width: 20px;
+    font-size:1rem;
 }
 
 .header {
@@ -100,6 +121,10 @@ body {
 
 .blue-link:hover {
     background-color: var(--hover-color);
+}
+
+.blue-link i{
+    color: var(--tertiary-color);
 }
 
 .links-container-subtitle {
@@ -222,8 +247,22 @@ body {
 
 }
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
     .blue-link-text {
         display: none;
+    }
+
+    .header-menu {
+        display: none; /* Hide header menu */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger button */
+    }
+
+    .header-menu.active {
+        display: flex; /* Show when active */
+        flex-direction: column;
+        align-items: center;
     }
 }

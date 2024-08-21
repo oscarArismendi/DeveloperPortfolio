@@ -1,9 +1,18 @@
-import { NavbarLink } from './NavbarLink' 
+import React, { useState } from 'react';
+import { NavbarLink } from './NavbarLink';
 
 export const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <header className="header">
-            <nav className="header-menu">
+            <button className="hamburger" onClick={toggleMenu}>
+                    <i className="fa-solid fa-bars"></i>
+            </button>
+            <nav className={`header-menu ${isMenuOpen ? 'active' : ''}`}>
                 <NavbarLink
                     link={"/"}
                     text={"Home"}
@@ -20,6 +29,7 @@ export const Header = () => {
                 >
                 </NavbarLink>
             </nav>
+
         </header>
     );
 }
