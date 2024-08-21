@@ -21,8 +21,8 @@
 
 
 .card {
-  border: 3px solid #ccc;
-  border-radius: 10px;
+  border: .2rem solid var(--tertiary-color);
+  border-radius: 2rem;
   width: 300px;
   padding: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -36,6 +36,11 @@
 
 }
 
+.project-video {
+  width: 80%; 
+  max-height: 65vh; 
+}
+
 .image {
   width: 50%;
   height: auto;
@@ -46,7 +51,7 @@
   font-size: 1.5em;
   margin: 16px 0 8px;
   color: var(--tertiary-color);
-  font-family: var(--montserrat-font);
+  font-family: var(--krona-font);
 }
 
 .description {
@@ -66,22 +71,23 @@
 }
 
 .technology-logo {
-  background: var(--tertiary-color);
-  height: 50px;
+  width: 114px;
+  filter: invert(30%) sepia(91%) saturate(2049%) hue-rotate(184deg) brightness(98%) contrast(104%);
   border-radius: 20%;
 }
 
 .link-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  gap: 20px;
   width: 100%;
 }
 
 .link-button{
   min-width: 100px;
   border-radius: 24px;
-  font-family: var(--montserrat-font);
-  font-size: 1rem;
+  font-family: var(--krona-font);
+  font-size: 1.6rem;
   font-weight: 400;
   color: var(--secondary-color);
   border: 3px solid var(--tertiary-color);
@@ -91,4 +97,14 @@
 .link-button:hover{
   background-color: var(--tertiary-color);
   font-weight: 700;
+}
+
+@media (max-width: 600px){
+  .technology-logo{
+    width: 60px;
+  }
+
+  .link-button{
+    font-size: 1rem;
+  }
 }

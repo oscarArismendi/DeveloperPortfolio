@@ -1,5 +1,5 @@
 import "../styles/project.css";
-
+import mysqlLogo from "../assets/mysql-logo.svg"
 const technologies = [
     { name: 'HTML', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg' },
     { name: 'CSS', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg' },
@@ -12,7 +12,7 @@ const technologies = [
     { name: 'AWS', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg' },
     { name: 'Docker', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg' },
     { name: 'Kubernetes', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kubernetes.svg' },
-    { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg' },
+    { name: 'MySQL', logo: mysqlLogo },
     { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg' },
     { name: 'Git', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg' },
     { name: 'GitHub', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg' },
@@ -28,11 +28,11 @@ export const Project = ({ imageUrl = "", videoUrl, title, description, useTechno
     return (
         imageUrl === "" ? (
             <div className="card">
-                <video controls width="80%">
+                <video controls  className="project-video">
                     <source src={videoUrl} type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="title title-light-blue">{title}</div>
+                <h2 className="title title-light-blue">{title}</h2>
                 <div className="description description-container">{description}</div>
                 <div className="technologies">
                     {technologies
@@ -47,7 +47,7 @@ export const Project = ({ imageUrl = "", videoUrl, title, description, useTechno
             </div>) :
             (<div className="card">
                 <img className="image" src={imageUrl} alt={`${title} project image`} />
-                <div className="title title-light-blue">{title}</div>
+                <h2 className="title title-light-blue">{title}</h2>
                 <div className="description description-container">{description}</div>
                 <div className="technologies">
                     {technologies
